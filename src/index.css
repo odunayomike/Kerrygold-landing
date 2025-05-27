@@ -17,3 +17,18 @@ body {
   font-size: 40px !important;
   color: #f8f1b0 !important;
 }
+
+.start-your-day {
+  background: #90be81;
+}
+
+.milk-support {
+  position: absolute;
+  margin: auto;
+  width: 70%;
+  margin-top: -100px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  left: 15%;
+  right: auto;
+}

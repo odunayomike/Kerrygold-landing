@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { Star, Trophy, Users, Calendar, MapPin, Gift } from "lucide-react";
 import bgImage from "./assets/kerrygoldbg1.svg";
+import bgImage2 from "./assets/kerrygoldbg2.svg";
+import bgImage3 from "./assets/kerrygoldbg3.svg";
 import cow from "./assets/cow.svg";
 import logo from "./assets/kerrygoldlogo.svg";
+import logo2 from "./assets/kerrygoldlogo2.svg";
 
 const KerrygoldLanding = () => {
   const [formData, setFormData] = useState({
@@ -101,7 +104,7 @@ const KerrygoldLanding = () => {
       </section>
 
       {/* Cows Image Section */}
-      <section className="py-16 bg-green-50">
+      <section className="">
         <div className="">
           <div
             className="h-64 bg-cover bg-center rounded-lg"
@@ -109,18 +112,21 @@ const KerrygoldLanding = () => {
               backgroundImage: `url(${cow})`,
               backgroundSize: "cover",
               backgroundPosition: "center center",
+              marginTop: "-110px",
+              position: "relative",
+              zIndex: "999999",
             }}
           />
         </div>
       </section>
 
       {/* Start Your Day Section */}
-      <section className="py-16 bg-white text-center">
+      <section className="py-36 start-your-day text-center">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-6 text-gray-800">
+          <h2 className="text-3xl font-bold mb-6" style={{ color: "#03321D" }}>
             Start Your Day the Kerrygold Way
           </h2>
-          <p className="text-lg text-gray-600 leading-relaxed">
+          <p className="text-lg text-black leading-relaxed">
             We're making this year's World Milk Day bigger, better, and way more
             fun! Join our community as we shine a spotlight on the nutritious
             power of milk and the little rituals that keep us going.
@@ -129,8 +135,8 @@ const KerrygoldLanding = () => {
       </section>
 
       {/* Milk Benefits Section */}
-      <section className="py-16 bg-yellow-50 text-center">
-        <div className="max-w-4xl mx-auto px-4">
+      <section className="py-16 bg-white text-center milk-support">
+        <div className="max-w-4xl mx-auto px-32">
           <h2 className="text-3xl font-bold mb-4 text-green-700">
             Milk Supports Brain Function
           </h2>
@@ -140,8 +146,8 @@ const KerrygoldLanding = () => {
 
       {/* Registration Form */}
       <section className="py-16 bg-yellow-100">
-        <div className="max-w-2xl mx-auto px-4">
-          <div className="bg-white rounded-lg p-8 shadow-lg">
+        <div className="max-w-2xl mx-auto px-4 pt-32">
+          <div className=" rounded-lg p-8 ">
             <h2 className="text-2xl font-bold mb-6 text-center text-green-700">
               Register Now – Don't Miss Out.
             </h2>
@@ -214,12 +220,17 @@ const KerrygoldLanding = () => {
       </section>
 
       {/* Competition Section */}
-      <section className="py-16 bg-green-600 text-white text-center">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="flex justify-center mb-6">
-            <Gift className="w-16 h-16" />
-          </div>
-          <h2 className="text-3xl font-bold mb-6">Win Big with Kerrygold</h2>
+      <section
+        className="py-32  text-white text-center"
+        style={{
+          backgroundImage: `url(${bgImage2})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center center",
+        }}
+      >
+        <div className="max-w-4xl mx-auto px-4 py-16">
+          <div className="flex justify-center mb-6"></div>
+          <h2 className="text-5xl font-bold mb-6">Win Big with Kerrygold</h2>
           <p className="text-lg leading-relaxed">
             Ready for a little friendly competition? Take our Daily Quiz, climb
             the leaderboard, and stand a chance to win amazing prizes for you
@@ -272,7 +283,14 @@ const KerrygoldLanding = () => {
       </section>
 
       {/* Join Family Section */}
-      <section className="py-16 bg-yellow-200 text-center">
+      <section
+        className="py-32  text-center"
+        style={{
+          backgroundImage: `url(${bgImage3})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center center",
+        }}
+      >
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-6 text-green-700">
             Join the Kerrygold Family
@@ -315,8 +333,8 @@ const KerrygoldLanding = () => {
       {/* Footer */}
       <footer className="bg-green-800 text-white py-8">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <div className="bg-green-700 text-white px-8 py-2 rounded-full font-bold text-lg inline-block mb-4">
-            Kerrygold
+          <div className=" inline-block mb-4 relative -mt-32">
+            <img src={logo2} alt="" />
           </div>
           <div className="flex justify-center space-x-8 text-sm">
             <span>Copyright and associated logos are registered marks.</span>
