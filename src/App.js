@@ -222,14 +222,14 @@ const KerrygoldLanding = () => {
 
       {/* Competition Section */}
       <section
-        className="py-32  text-white text-center"
+        className="py-24  text-white text-center"
         style={{
           backgroundImage: `url(${bgImage2})`,
           backgroundSize: "cover",
           backgroundPosition: "center center",
         }}
       >
-        <div className="max-w-4xl mx-auto px-4 py-16">
+        <div className="max-w-4xl mx-auto px-4 py-10">
           <div className="flex justify-center mb-6"></div>
           <h2 className="text-5xl font-bold mb-6">Win Big with Kerrygold</h2>
           <p className="text-lg leading-relaxed">
