@@ -6,6 +6,7 @@ import bgImage3 from "./assets/kerrygoldbg3.svg";
 import cow from "./assets/cow.svg";
 import logo from "./assets/kerrygoldlogo.svg";
 import logo2 from "./assets/kerrygoldlogo2.svg";
+import DailyQuiz from "./components/DailyQuiz";
 
 const KerrygoldLanding = () => {
   const [formData, setFormData] = useState({
@@ -332,6 +333,8 @@ const KerrygoldLanding = () => {
             and your family.
           </p>
         </div>
+
+        <DailyQuiz />
       </section>
 
       {/* Leaderboard Section */}
