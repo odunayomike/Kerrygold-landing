@@ -32,3 +32,19 @@ body {
   left: 15%;
   right: auto;
 }
+
+.font2 {
+  font-family: "font2", sans-serif !important;
+}
+
+.font1 {
+  font-family: "font1", sans-serif !important;
+}
+
+.font3 {
+  font-family: "Libre Bodoni", serif;
+}
+
+body {
+  font-family: "font2", sans-serif !important;
+}
